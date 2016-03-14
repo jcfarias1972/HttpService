@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,29 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN del libro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YO-s6-2jC">
-                                <rect key="frame" x="213" y="65" width="174" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Búsqueda ISBN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YO-s6-2jC">
+                                <rect key="frame" x="181" y="65" width="239" height="33"/>
                                 <color key="backgroundColor" red="0.65213967390000005" green="1" blue="0.25327708729999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="h2T-bm-5ql"/>
-                                    <constraint firstAttribute="width" constant="174" id="pVM-Kl-Zac"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="1jK-J6-bnI"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="239" id="5Gf-cn-DLM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="9Bo-QK-LCe"/>
+                                    <constraint firstAttribute="height" constant="33" id="h2T-bm-5ql"/>
+                                    <constraint firstAttribute="width" constant="239" id="pVM-Kl-Zac"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifn-sx-til">
-                                <rect key="frame" x="29" y="170" width="541" height="331"/>
-                                <color key="backgroundColor" red="0.935546875" green="0.935546875" blue="0.935546875" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="541" id="xFo-SG-gsI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa el ISBN" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="lx8-vW-gsQ">
-                                <rect key="frame" x="181" y="126" width="239" height="30"/>
+                                <rect key="frame" x="181" y="106" width="239" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="239" id="OxG-Iu-znq"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="VW3-fU-Gv2"/>
                                     <constraint firstAttribute="width" constant="239" id="r93-Ye-8Ko"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,27 +43,79 @@
                                     <action selector="isbnAction4:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="YGx-MK-Nq6"/>
                                 </connections>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título del Libro: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Px-JI-ke8">
+                                <rect key="frame" x="239" y="144" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-48-1D5">
+                                <rect key="frame" x="181" y="165" width="239" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Nb-sM-UgM"/>
+                                    <constraint firstAttribute="width" constant="239" id="jyb-AD-00I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor(es):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REi-4Q-5BA">
+                                <rect key="frame" x="262" y="203" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RE2-10-rld">
+                                <rect key="frame" x="181" y="225" width="239" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="qQN-cm-qTj"/>
+                                    <constraint firstAttribute="height" constant="30" id="s3F-dv-zOI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6N-Gn-iLU">
+                                <rect key="frame" x="217" y="286" width="166" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="5s3-qr-2bH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="S2e-Wz-Uou"/>
+                                    <constraint firstAttribute="height" constant="234" id="ehe-Te-dhN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KA5-ba-7tf">
+                                <rect key="frame" x="270" y="263" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.65213967390000005" green="1" blue="0.25327708729999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="KA5-ba-7tf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0FO-2r-YOb"/>
+                            <constraint firstItem="KA5-ba-7tf" firstAttribute="top" secondItem="RE2-10-rld" secondAttribute="bottom" constant="8" id="3SS-0L-wYF"/>
                             <constraint firstItem="lx8-vW-gsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Mh-oz-hLY"/>
                             <constraint firstItem="9YO-s6-2jC" firstAttribute="centerX" secondItem="lx8-vW-gsQ" secondAttribute="centerX" id="6Qe-Zq-sqn"/>
+                            <constraint firstItem="S6N-Gn-iLU" firstAttribute="top" secondItem="KA5-ba-7tf" secondAttribute="bottom" constant="2" id="8fa-V0-vot"/>
+                            <constraint firstItem="RE2-10-rld" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="8vH-pn-de1"/>
+                            <constraint firstItem="REi-4Q-5BA" firstAttribute="top" secondItem="jgG-48-1D5" secondAttribute="bottom" constant="8" id="ETX-7e-Npl"/>
                             <constraint firstItem="9YO-s6-2jC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GnM-WX-ZVv"/>
-                            <constraint firstItem="Ifn-sx-til" firstAttribute="top" secondItem="lx8-vW-gsQ" secondAttribute="bottom" constant="14" id="HQ5-wZ-k46"/>
-                            <constraint firstItem="lx8-vW-gsQ" firstAttribute="top" secondItem="9YO-s6-2jC" secondAttribute="bottom" constant="32" id="TzG-k2-tvl"/>
-                            <constraint firstItem="Ifn-sx-til" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="WqQ-z7-HVS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ifn-sx-til" secondAttribute="trailing" constant="10" id="cd7-Qh-llB"/>
-                            <constraint firstItem="9YO-s6-2jC" firstAttribute="centerX" secondItem="Ifn-sx-til" secondAttribute="centerX" constant="0.5" id="iJ6-aS-fK2"/>
+                            <constraint firstItem="jgG-48-1D5" firstAttribute="top" secondItem="0Px-JI-ke8" secondAttribute="bottom" id="IbZ-eU-ZRL"/>
+                            <constraint firstItem="RE2-10-rld" firstAttribute="top" secondItem="REi-4Q-5BA" secondAttribute="bottom" constant="1" id="MoK-9p-1CG"/>
+                            <constraint firstItem="0Px-JI-ke8" firstAttribute="top" secondItem="lx8-vW-gsQ" secondAttribute="bottom" constant="8" id="OeR-Rn-Je0"/>
+                            <constraint firstItem="S6N-Gn-iLU" firstAttribute="centerX" secondItem="KA5-ba-7tf" secondAttribute="centerX" id="P12-L7-p9M"/>
+                            <constraint firstItem="lx8-vW-gsQ" firstAttribute="top" secondItem="9YO-s6-2jC" secondAttribute="bottom" constant="8" id="TzG-k2-tvl"/>
+                            <constraint firstItem="REi-4Q-5BA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyL-cg-J4o"/>
+                            <constraint firstItem="jgG-48-1D5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="ePT-Ka-5m9"/>
                             <constraint firstItem="lx8-vW-gsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jm7-AV-UXd"/>
                             <constraint firstItem="lx8-vW-gsQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ovK-J4-86M"/>
                             <constraint firstItem="9YO-s6-2jC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="uBu-Z7-pNm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ifn-sx-til" secondAttribute="bottom" constant="99" id="xYh-tY-B3y"/>
-                            <constraint firstItem="Ifn-sx-til" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-0.5" id="zp6-jQ-8O9"/>
+                            <constraint firstItem="0Px-JI-ke8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXa-t7-LS5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imgPortada" destination="S6N-Gn-iLU" id="xIg-M8-3wD"/>
                         <outlet property="isbn" destination="lx8-vW-gsQ" id="U9h-Gi-FD5"/>
-                        <outlet property="isbnTexto" destination="Ifn-sx-til" id="pBp-hR-4Mv"/>
+                        <outlet property="lblAutor" destination="RE2-10-rld" id="jvL-Oo-oxE"/>
+                        <outlet property="lblTitulo" destination="jgG-48-1D5" id="OZ8-CP-aKY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

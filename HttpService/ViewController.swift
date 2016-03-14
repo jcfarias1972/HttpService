@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var isbn: UITextField!
-    @IBOutlet weak var isbnTexto: UITextView!
+    @IBOutlet weak var lblTitulo: UITextField!
+    @IBOutlet weak var lblAutor: UITextField!
+    @IBOutlet weak var imgPortada: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +35,6 @@ class ViewController: UIViewController {
     }
 
     func sincrono() {
-        isbnTexto.text=""
         let urls = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:\(self.isbn.text!)"
         let url = NSURL(string: urls)
         let datos:NSData? = NSData(contentsOfURL: url!)
@@ -59,10 +61,61 @@ class ViewController: UIViewController {
                 alerta.addAction(accion2)
                 self.presentViewController(alerta, animated: true, completion: nil)
             }else{
-                isbnTexto.text=texto! as String
+                
+                do{
+                    let json = try NSJSONSerialization.JSONObjectWithData(datos!, options: NSJSONReadingOptions.MutableLeaves)
+                    let dic1 = json as! NSDictionary
+                    let dic2 = dic1["ISBN:\(self.isbn.text!)"] as! NSDictionary
+                    let dic3 = dic2["authors"]
+                    
+                    let totAutores = dic3!.count
+                    lblAutor.text = "";
+                    for var x=0 ; x<totAutores; ++x{
+                        lblAutor.text = lblAutor.text! + "\(dic3![0]["name"] as! String); "
+                        
+                    }
+                    
+                    //let dic4 = dic2["publishers"]
+                    lblTitulo.text = dic2["title"] as! NSString as String
+                    
+                    let dic4 = dic2["cover"]
+                    if dic4 != nil {
+                        let cover : String? = dic4!["medium"] as! NSString as String
+                    
+                        if cover != nil{
+                            let urls2 = cover
+                            let url2 = NSURL(string: urls2!)
+                            let datos2:NSData? = NSData(contentsOfURL: url2!)
+                            imgPortada.image = UIImage(data: datos2!)
+                            disolver()
+                        }else{
+                            imgPortada.image = UIImage(contentsOfFile: "sin-imagen.jpg")
+                            print("Sin portada 1")
+                        }
+                    }else{
+                        imgPortada.image = UIImage(named: "sin-imagen.jpg")
+                        disolver()
+                        
+                        print("Sin portada 2")
+                    }
+                }catch _ {
+                    
+                }
             }
            
         }
+        /*
+        //9780071599894         con portada
+        //978-84-376-0494-7     sin portada
+        */
+    }
+    
+    func disolver(){
+        UIView.transitionWithView(self.imgPortada,
+            duration:5,
+            options: .TransitionCrossDissolve,
+            animations: { self.imgPortada.image = self.imgPortada.image },
+            completion: nil)
     }
 
 }

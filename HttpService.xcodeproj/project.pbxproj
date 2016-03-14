@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCB205161C965B1700B9E23C /* sin-imagen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCB205151C965B1700B9E23C /* sin-imagen.jpg */; };
 		CCC3D7671C9102DC0080EDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3D7661C9102DC0080EDAC /* AppDelegate.swift */; };
 		CCC3D7691C9102DC0080EDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC3D7681C9102DC0080EDAC /* ViewController.swift */; };
 		CCC3D76C1C9102DC0080EDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC3D76A1C9102DC0080EDAC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCB205151C965B1700B9E23C /* sin-imagen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sin-imagen.jpg"; sourceTree = "<group>"; };
 		CCC3D7631C9102DC0080EDAC /* HttpService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HttpService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC3D7661C9102DC0080EDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC3D7681C9102DC0080EDAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCB205141C965B0700B9E23C /* imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				CCB205151C965B1700B9E23C /* sin-imagen.jpg */,
+			);
+			name = imagenes;
+			sourceTree = "<group>";
+		};
 		CCC3D75A1C9102DC0080EDAC = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		CCC3D7651C9102DC0080EDAC /* HttpService */ = {
 			isa = PBXGroup;
 			children = (
+				CCB205141C965B0700B9E23C /* imagenes */,
 				CCC3D7661C9102DC0080EDAC /* AppDelegate.swift */,
 				CCC3D7681C9102DC0080EDAC /* ViewController.swift */,
 				CCC3D76A1C9102DC0080EDAC /* Main.storyboard */,
@@ -124,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC3D7711C9102DC0080EDAC /* LaunchScreen.storyboard in Resources */,
+				CCB205161C965B1700B9E23C /* sin-imagen.jpg in Resources */,
 				CCC3D76E1C9102DC0080EDAC /* Assets.xcassets in Resources */,
 				CCC3D76C1C9102DC0080EDAC /* Main.storyboard in Resources */,
 			);
@@ -287,6 +299,7 @@
 				CCC3D7771C9102DC0080EDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
