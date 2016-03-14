@@ -48,7 +48,7 @@
 		CCC3D75A1C9102DC0080EDAC = {
 			isa = PBXGroup;
 			children = (
-				CCC3D7651C9102DC0080EDAC /* HttpService */,
+				CCC3D7651C9102DC0080EDAC /* ISBN_JSON */,
 				CCC3D7641C9102DC0080EDAC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CCC3D7651C9102DC0080EDAC /* HttpService */ = {
+		CCC3D7651C9102DC0080EDAC /* ISBN_JSON */ = {
 			isa = PBXGroup;
 			children = (
 				CCB205141C965B0700B9E23C /* imagenes */,
@@ -72,6 +72,7 @@
 				CCC3D76F1C9102DC0080EDAC /* LaunchScreen.storyboard */,
 				CCC3D7721C9102DC0080EDAC /* Info.plist */,
 			);
+			name = ISBN_JSON;
 			path = HttpService;
 			sourceTree = "<group>";
 		};
@@ -111,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "HttpService" */;
+			buildConfigurationList = CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN_JSON" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -283,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "HttpService" */ = {
+		CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN_JSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCC3D7731C9102DC0080EDAC /* Debug */,

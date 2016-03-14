@@ -17,7 +17,7 @@
                BlueprintIdentifier = "CCC3D7621C9102DC0080EDAC"
                BuildableName = "HttpService.app"
                BlueprintName = "HttpService"
-               ReferencedContainer = "container:HttpService.xcodeproj">
+               ReferencedContainer = "container:ISBN_JSON.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "CCC3D7621C9102DC0080EDAC"
             BuildableName = "HttpService.app"
             BlueprintName = "HttpService"
-            ReferencedContainer = "container:HttpService.xcodeproj">
+            ReferencedContainer = "container:ISBN_JSON.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "CCC3D7621C9102DC0080EDAC"
             BuildableName = "HttpService.app"
             BlueprintName = "HttpService"
-            ReferencedContainer = "container:HttpService.xcodeproj">
+            ReferencedContainer = "container:ISBN_JSON.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "CCC3D7621C9102DC0080EDAC"
             BuildableName = "HttpService.app"
             BlueprintName = "HttpService"
-            ReferencedContainer = "container:HttpService.xcodeproj">
+            ReferencedContainer = "container:ISBN_JSON.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
