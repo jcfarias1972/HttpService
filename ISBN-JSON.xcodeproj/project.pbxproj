@@ -112,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN_JSON" */;
+			buildConfigurationList = CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN-JSON" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -265,7 +265,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HttpService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gob.cfe.HttpService;
+				PRODUCT_BUNDLE_IDENTIFIER = "gob.cfe.ISBN-JSON";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -276,7 +276,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HttpService/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gob.cfe.HttpService;
+				PRODUCT_BUNDLE_IDENTIFIER = "gob.cfe.ISBN-JSON";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -284,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN_JSON" */ = {
+		CCC3D75E1C9102DC0080EDAC /* Build configuration list for PBXProject "ISBN-JSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CCC3D7731C9102DC0080EDAC /* Debug */,
